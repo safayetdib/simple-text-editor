@@ -1,0 +1,94 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+button {
+	padding: 10px;
+	cursor: pointer;
+}
+button i {
+	font-size: 24px;
+}
+
+.palette-btn {
+	height: 50px;
+	width: 100px;
+	padding: 5px 8px;
+	cursor: pointer;
+}
+
+.options {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px;
+	background-color: skyblue;
+	padding: 10px 20px;
+}
+
+.text-area {
+	height: calc(100vh - 160px);
+	background-color: antiquewhite;
+	border: 1px solid #aaa;
+	margin: 10px;
+	padding: 10px;
+	font-size: 24px;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 10px;
+}
+
+.cancel-btn,
+.save-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	font-size: 22px;
+}
+
+.btn-selected {
+	background-color: aqua;
+}
+
+.bold {
+	font-weight: 800;
+}
+.italic {
+	font-style: italic;
+}
+.underline {
+	text-decoration: underline;
+}
+
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+.align-justify {
+	text-align: justify;
+}
+
+@media screen and (max-width: 580px) {
+	.options {
+		gap: 10px;
+	}
+
+	.text-area {
+		height: calc(100vh - 220px);
+	}
+}

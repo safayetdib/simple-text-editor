@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="container">
+			<div class="options">
+				<div class="text-style">
+					<button id="font-bold-btn" ">
+						<i class="fa-solid fa-bold"></i>
+					</button>
+					<button id="font-italic-btn">
+						<i class="fa-solid fa-italic"></i>
+					</button>
+					<button id="font-underline-btn">
+						<i class="fa-solid fa-underline"></i>
+					</button>
+				</div>
+
+				<div class="text-align">
+					<button id="align-left-btn">
+						<i class="fa-solid fa-align-left"></i>
+					</button>
+					<button id="align-center-btn">
+						<i class="fa-solid fa-align-center"></i>
+					</button>
+					<button id="align-right-btn">
+						<i class="fa-solid fa-align-right"></i>
+					</button>
+					<button id="align-justify-btn">
+						<i class="fa-solid fa-align-justify"></i>
+					</button>
+				</div>
+
+				<div class="color-palette">
+					<input id="palette-btn" class="palette-btn" type="color" />
+				</div>
+			</div>
+
+			<div id="text-area" class="text-area" contenteditable="true" ></div>
+
+			<div class="footer">
+				<button id="cancel-btn" class="cancel-btn">
+					<i class="fa-solid fa-xmark"></i> Cancel
+				</button>
+				<button id="save-btn" class="save-btn">
+					<i class="fa-solid fa-floppy-disk"></i> Save
+				</button>
+			</div>
+		</main>
+
+		<script src="scripts/utilities.js"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
